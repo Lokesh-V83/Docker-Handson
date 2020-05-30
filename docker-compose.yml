@@ -1,0 +1,9 @@
+version: '3'
+services:
+  springboot:
+    image: "klik4lokesh/springboot-example"
+    ports:
+        - "9001-9050:8080"
+    deploy:
+      mode: replicated
+      replicas: 3
